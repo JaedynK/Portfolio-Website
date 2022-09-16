@@ -151,7 +151,7 @@ a{
   }
 
   .main-description{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact;
     background: #b43a3a;
     background: -webkit-linear-gradient(to right, #636363, #131313);
     background: linear-gradient(to right, #636363, #131313);
@@ -160,7 +160,7 @@ a{
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    position: relative;
+   
   }
 /* typing effect start */
  
