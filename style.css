@@ -197,7 +197,7 @@ a{
   position: relative;
   width: 800px;
   min-height: 800px;
-  
+  min-width: 400px;
   margin: 5px;
   overflow: hidden;
   border-radius: 10px;
