@@ -15,7 +15,7 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 
 // main header animation
 
-const texts = ['Welcome', 'I am learning to code', 'Not just front-end', 'back-end as well!']
+const texts = ['Welcome', 'I-am-learning-to-code', 'Not-just-front-end', 'back-end-as-well!']
 let count = 0;
 let index = 0;
 let currentText = '';
@@ -23,6 +23,8 @@ let letter = '';
 
 (function type(){
 
+
+   
 if(count === texts.length){
     count = 0
 }
@@ -30,12 +32,15 @@ currentText = texts[count];
 letter = currentText.slice(0, ++index)
 
 document.querySelector('.main-description').textContent = letter;
+console.log(letter)
+
+
 if(letter.length === currentText.length){
     count++;
     index = 0;
     console.log(currentText)
 }
-setTimeout(type, 250)
+setTimeout(type, 200)
 }());
 
 // slide-show
