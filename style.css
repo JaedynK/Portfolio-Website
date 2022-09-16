@@ -166,11 +166,11 @@ a{
  
   .main-description::after{
     content: "";
-    position: fixed;
+    position:static;
     width: 1px;
     height: 100%;
     border-right: 3px solid white;
-    animation: typer 1s infinite ease;
+    animation: typer .75s infinite ease;
   }
 
 
@@ -188,7 +188,7 @@ a{
   /* about section */
 
   .me {
-    padding: 200px 100px ;
+    padding: 200px 0px ;
   }
 
 /*slide show*/
@@ -197,7 +197,7 @@ a{
   position: relative;
   width: 800px;
   min-height: 800px;
-  min-width: 500px;
+  
   margin: 5px;
   overflow: hidden;
   border-radius: 10px;
