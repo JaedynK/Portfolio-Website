@@ -6,7 +6,7 @@
 
  body{
     background-color: #979595;
-    background-image: url("../my-protfolio/images/Mountains.jpeg"); 
+    background-image: url("images/Mountains.jpeg"); 
     background-blend-mode: soft-light;
     background-size: cover;
  }
