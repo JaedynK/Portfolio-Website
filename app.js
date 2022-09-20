@@ -40,7 +40,7 @@ if(letter.length === currentText.length){
     index = 0;
     console.log(currentText)
 }
-setTimeout(type, 200)
+setTimeout(type, 350)
 }());
 
 // slide-show
@@ -117,3 +117,14 @@ slider.addEventListener("mouseover", () => {
 slider.addEventListener("mouseout", () => {
     repeater()
 })
+
+//email page/button
+const contactButton = document.querySelector(".button-64");
+const contactPage = document.querySelector(".contact");
+
+contactButton.addEventListener("click", () => {
+    contactButton.classList.toggle("active");
+    contactPage.classList.toggle("active");
+})
+
+

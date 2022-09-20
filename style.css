@@ -5,14 +5,14 @@
 }
 
  body{
-    background-color: #979595;
-    background-image: url("images/Mountains.jpeg"); 
+    background-color: #545353;
+    background-image: url("images/background-web.jpg"); 
     background-blend-mode: soft-light;
-    background-size: cover;
+    background-size:cover;
  }
 /*primary navbar*/
 header{
-    background: transparent;
+  background: rgba(75, 75, 75, 0.9);
         position:sticky;
         top: 0;
         width: 100%;
@@ -26,9 +26,9 @@ li{
 a{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #3ab49a;
-    background: #3ab49a;
-    background: -webkit-linear-gradient(to right, #45fc76, #46fd1d, #96b43a);
-    background: linear-gradient(to right, #545766, #1e2d33, #0e1428);
+    background: #1d4df9;
+    background: -webkit-linear-gradient(to right, #456dfc, #0099ff);
+    background: linear-gradient(to right, #1d4df9, #0099ff);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -102,7 +102,7 @@ a{
         top: 0px;
         gap: 0;
         flex-direction: column;
-        background-color: #fcb045;
+        background-color: rgba(255,255,255);
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -123,6 +123,8 @@ a{
   }
 
   .main-container{
+    background: rgba(255,255,255,.9);
+    border-radius: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,9 +141,9 @@ a{
     font-size: 100px;
     margin-bottom: 24px;
     color: #3ab49a;
-    background: #b43a3a;
-    background: -webkit-linear-gradient(to right, #fcb045, #ff0000);
-    background: linear-gradient(to right, #fcb045, #ff0000);
+    background: #1d4df9;
+    background: -webkit-linear-gradient(to right, #456dfc, #0099ff);
+    background: linear-gradient(to right, #1d4df9, #0099ff);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -152,9 +154,9 @@ a{
 
   .main-description{
     font-family: Impact;
-    background: #b43a3a;
-    background: -webkit-linear-gradient(to right, #636363, #131313);
-    background: linear-gradient(to right, #636363, #131313);
+    background: #1d4df9;
+    background: -webkit-linear-gradient(to right, #456dfc, #0099ff);
+    background: linear-gradient(to right, #90a4eb, #0099ff);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -195,9 +197,7 @@ a{
 .slide-container{
   background: #000000;
   position: relative;
-  width: 800px;
-  min-height: 800px;
-  min-width: 400px;
+
   margin: 5px;
   overflow: hidden;
   border-radius: 10px;
@@ -319,11 +319,11 @@ a{
   }
 
   .projects-container{
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
     height: 90%;
     text-align: center;
@@ -335,9 +335,9 @@ a{
     font-size: 3rem;
     margin-bottom: 24px;
     color: #3ab49a;
-    background: #b43a3a;
-    background: -webkit-linear-gradient(to right, #fcb045, #ff0000);
-    background: linear-gradient(to right, #fcb045, #ff0000);
+    background: #1d4df9;
+    background: -webkit-linear-gradient(to right, #456dfc, #0099ff);
+    background: linear-gradient(to right, #1d4df9, #0099ff);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -353,8 +353,9 @@ a{
     border-radius: 100px;
     display:flex;
     justify-content: center;
-   color: rgb(26, 16, 16);
-   background: #000000;
+    background: #1d4df9;
+    background: -webkit-linear-gradient(to right, #456dfc, #0099ff);
+    background: linear-gradient(to right, #1d4df9, #0099ff);
 
   }
 
@@ -382,9 +383,9 @@ a{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 4rem;
     margin-bottom: 20px;
-    background: #b43a3a;
-    background: -webkit-linear-gradient(to right, #fcb045, #ff0000);
-    background: linear-gradient(to left, #fcb045, #ff0000);
+    background: #1d4df9;
+    background: -webkit-linear-gradient(to right, #456dfc, #0099ff);
+    background: linear-gradient(to right, #1d4df9, #0099ff);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -395,85 +396,115 @@ a{
 
   .info-images{
     margin: 10px;
-    height: 300px;
-    width: 200px;
-    border-radius: 100px;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     justify-content: center;
-   color: rgb(26, 16, 16);
-   background: #b43a3a;
-   background: -webkit-linear-gradient(to right, #fcb045, #ff0000);
-   background: linear-gradient(to right, #fcb045, #ff0000);
+
   }
 
-  /*contact button*/
-  /* CSS */
-.button-85 {
-  padding: 0.6em 2em;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
+
+
+/*contact page*/
+
+/*contact button*/
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  justify-content: center;
+  line-height: 8px;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
-.button-85:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+.button-64:active,
+.button-64:hover {
+  outline: 0;
 }
 
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.button-85:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
   width: 100%;
   height: 100%;
-  background: #222;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
+  transition: 300ms;
 }
 
-/*contact page*/
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 300px) {
+  .button-64 {
+    font-size: 15px;
+    min-width: 100px;
+  }
+}
+/*When contact button is clicked*/
+@media(min-width:0){
+
+  .contact.active{
+   left: 0;
+   top: 100px
+  }
+.contact{
+  position: fixed;
+  left: -100%;
+  top: 100px;
+  gap: 0;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+  background: #1d4df9;
+  background: -webkit-linear-gradient(to right, #456dfc, #0099ff);
+  background: linear-gradient(to right, #dadde8, #95cff6);
+  width: 100%;
+  border-radius: 10px;
+    }
+    
+    .contact h3{
+      color: #000000;
+      font-weight: 200;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    .contact input, .contact textarea{
+      border: 0;
+      margin: 10px 0;
+      padding: 20px;
+      outline: none;
+      background: #00ffd5;
+      font-size: 15px;
+    }
+    
+    .contact button{
+      padding: 15px;
+      background: #00ffd5;
+      color: #000000;
+      font-size: 18px;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      border-radius: 100px;
+      width: 100px;
+      margin: 20px;
+    }
+  }
