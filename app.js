@@ -15,7 +15,7 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 
 // main header animation
 
-const texts = ['Welcome', 'I-am-learning-to-code', 'Not-just-front-end', 'back-end-as-well!']
+const texts = ['Welcome', 'Take a look around']
 let count = 0;
 let index = 0;
 let currentText = '';
