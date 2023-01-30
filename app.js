@@ -23,8 +23,6 @@ let letter = '';
 
 (function type(){
 
-
-   
 if(count === texts.length){
     count = 0
 }
