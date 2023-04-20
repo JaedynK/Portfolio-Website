@@ -1,3 +1,13 @@
+//src switch
+
+function switchPage() {
+    var contentFrame = document.getElementById('content');
+    if (contentFrame.src.endsWith('Portfolio-Website/index.html')) {
+        contentFrame.src = 'Portfolio-Website/index.html';
+    } else {
+        contentFrame.src = 'page1.html';
+    }
+}
 
 //hamburger navbar 
 const hamburger = document.querySelector(".hamburger");
