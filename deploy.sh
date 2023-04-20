@@ -5,7 +5,7 @@ npm run build
 
 cd dist
 
-echo> .nojekyll
+echo > .nojekyll
 
 echo 'http://www.jaedynkeister.com' > CNAME
 
