@@ -1,13 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="public/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jaedyn Protfolio website</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1ed1322c8b.js" crossorigin="anonymous"></script> <!--font-awesome-->
+    <link rel="stylesheet" href="style.css"> <!--Links .css-->
+    <title>Jaedyn Keister World Wide</title>
+</head>
+<a href="http://localhost:5173/">Test Page</a>
+    <header>
+        <!--navbar-->
+    <nav class="primary-navbar">
+        <a href="#home" class="nav-logo">JK</a>
+
+        <ul class="navbar">
+            <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="button-64" href="mailto:jaedyn.keister@gmail.com"
+                 role="button">Email Me!</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+<body>
+<div class="main" id="home">
+    <div class="main-container">
+        <h2 class="main-header">Hello World, My name is Jaedyn</h2>
+        <h2 class="main-description"> Welcome to my website</h2>
+    </div>
+</div>
+<!-- About section -->
+<center>
+<div class="me" id="about">
+    <!--Slider section-->
+    <div class="slide-container">
+        <div class="slide active"><img src="images/me.JPG">
+            <div class="me-description">
+                <h2>A little about me...</h2>
+                <p>I am an Air Force Veteran and Full-Stack developer from Oklahoma! </p>
+            </div>
+        </div>
+        <div class="slide"><img src="images/Sarah_Gus.jpeg">
+            <div class="me-description">
+                
+                <h2>My Son and wife!</h2>
+                <p>They are my world an give me the motivation to keep learning and pushing myself to improve our lives</p>
+            </div>
+        </div>
+        <div class="slide"><img src="images/waterfall.jpeg">
+            <div class="me-description">
+                <h2>My Journey</h2>
+                <p>I served in the military for 6 years and have had amazing adventures along the way that I wish I could share all in one slide! I have decided to step away and prusue my passion in software development. </p>
+            </div>
+        </div>
+        <div class="nav">
+            <i class="fas fa-chevron-left prev-btn"></i>
+            <i class="fas fa-chevron-right next-btn"></i>
+        </div>
+        <div class="nav-visibility">
+            <div class="slide-icon active"></div>
+            <div class="slide-icon"></div>
+            <div class="slide-icon"></div>
+        </div>
+    </div>
+</div>
+</center>
+<!-- Projects -->
+<div class="my-projects" id="projects">
+    <div class="projects-container">
+        <h1 class="projects-header">Projects are in the works!!!</h1>
+        <iframe class="projects-images" src="https://embed.lottiefiles.com/animation/54487"></iframe>
+    </div>
+</div>
+<!-- Contact Section -->
+<div class="info" id="contact">
+    <div class="info-container">
+        <h1 class="info-header">Look me up on Github, Twitter, & Linkedin!</h1>
+        <div class="info-images">
+            <a href="https://github.com/JaedynK"><i class="fa-brands fa-github fa-4x"></i></a>
+            <a href="https://twitter.com/_JaedynKeister"><i class="fa-brands fa-twitter fa-4x"></i></a>
+            <a href="https://www.linkedin.com/in/jaedyn-keister"><i class="fa-brands fa-linkedin fa-4x"></i></a>
+        </div>
+    </div>
+</div>
+
+
+<script src="Include a script tag to https://smtpjs.com/v3/smtp.js"></script>
+<script src="app.js"></script> <!--Links .js-->
+</body>
 </html>
