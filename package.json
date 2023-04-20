@@ -1,5 +1,5 @@
 {
-  "homepage": "http://jaedynkeister.com",
+  "homepage": "http://www.jaedynkeister.com",
   "name": "portfolio-website",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build", 
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
