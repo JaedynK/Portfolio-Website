@@ -387,7 +387,7 @@ a {
 /* Contact section  */
 
 .info {
-  padding: 200px 0;
+  padding: 3rem;
 }
 
 .info-container {
@@ -408,8 +408,8 @@ a {
   font-size: 4rem;
   margin-bottom: 20px;
   background: #1d4df9;
-  background: -webkit-linear-gradient(to right, #456dfc, #0099ff);
-  background: linear-gradient(to right, #1d4df9, #0099ff);
+  background: -webkit-linear-gradient(to right, #d3d9f9, #3c505d);
+  background: linear-gradient(to right, #738dec, #5b9dca);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -423,6 +423,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  color: 
 
 }
 
