@@ -18,37 +18,37 @@ hamburger.addEventListener("click", () => {
     navbars.classList.toggle("active");
 })
 
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () =>{
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
     hamburger.classList.remove("active");
     navbars.classList.remove("active");
 }))
 
 // main header animation
 
-const texts = ['Welcome', 'Take a look around']
+const texts = ['speed', 'quality', "value"]
 let count = 0;
 let index = 0;
 let currentText = '';
 let letter = '';
 
-(function type(){
+(function type() {
 
-if(count === texts.length){
-    count = 0
-}
-currentText = texts[count];
-letter = currentText.slice(0, ++index)
+    if (count === texts.length) {
+        count = 0
+    }
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index)
 
-document.querySelector('.main-description').textContent = letter;
-console.log(letter)
+    document.querySelector('.main-description').textContent = letter;
+    console.log(letter)
 
 
-if(letter.length === currentText.length){
-    count++;
-    index = 0;
-    console.log(currentText)
-}
-setTimeout(type, 350)
+    if (letter.length === currentText.length) {
+        count++;
+        index = 0;
+        console.log(currentText)
+    }
+    setTimeout(type, 500)
 }());
 
 // slide-show
@@ -58,11 +58,11 @@ const prevBtn = document.querySelector('.prev-btn')
 const slides = document.querySelectorAll('.slide')
 const slideIcons = document.querySelectorAll(".slide-icon")
 
-let numberOfSlides  = slides.length;
+let numberOfSlides = slides.length;
 let slideNumber = 0
 
 //next-btn
-nextBtn.addEventListener('click', () =>{
+nextBtn.addEventListener('click', () => {
     slides.forEach((slide) => {
         slide.classList.remove('active');
     })
@@ -71,7 +71,7 @@ nextBtn.addEventListener('click', () =>{
     })
     slideNumber++;
 
-    if(slideNumber > (numberOfSlides -1)){
+    if (slideNumber > (numberOfSlides - 1)) {
         slideNumber = 0
     }
 
@@ -79,7 +79,7 @@ nextBtn.addEventListener('click', () =>{
     slideIcons[slideNumber].classList.add("active")
 })
 //prev-btn
-prevBtn.addEventListener('click', () =>{
+prevBtn.addEventListener('click', () => {
     slides.forEach((slide) => {
         slide.classList.remove('active');
     })
@@ -88,7 +88,7 @@ prevBtn.addEventListener('click', () =>{
     })
     slideNumber--;
 
-    if(slideNumber < 0){
+    if (slideNumber < 0) {
         slideNumber = numberOfSlides - 1
     }
 
@@ -98,7 +98,7 @@ prevBtn.addEventListener('click', () =>{
 //repeat when inacitve;
 var playSlider;
 var repeater = () => {
-    playSlider = setInterval(function(){
+    playSlider = setInterval(function () {
         slides.forEach((slide) => {
             slide.classList.remove('active');
         })
@@ -106,11 +106,11 @@ var repeater = () => {
             slideIcon.classList.remove('active');
         })
         slideNumber++;
-    
-        if(slideNumber > (numberOfSlides -1)){
+
+        if (slideNumber > (numberOfSlides - 1)) {
             slideNumber = 0
         }
-    
+
         slides[slideNumber].classList.add("active")
         slideIcons[slideNumber].classList.add("active")
     }, 5000)
